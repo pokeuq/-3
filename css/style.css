@@ -1,0 +1,70 @@
+:root {
+  --dark: rgb(20, 20, 20);
+  --yellow: rgb(253, 216, 53);
+  --blue: rgb(98, 0, 234);
+  
+  --c1: rgb(96, 87, 204);
+  --c2: rgb(222, 217, 115);
+  
+  --left-color: var(--c1);
+  --right-color: var(--c2);
+}
+
+body {  
+  background-color: var(--dark);
+  margin: 0px;
+}
+
+.side {
+  height: 100vh;
+  width: 100%;
+
+  display: grid;
+  place-items: center;
+
+  overflow: hidden;
+  position: absolute;
+
+  cursor: pointer;
+}
+
+.side .title {
+  font-family: "Rubik", sans-serif;
+  font-size: 8vw;
+  margin: 0px 15vw;
+  width: 80vw;
+  letter-spacing: 0.2rem;
+}
+
+.side .fancier {
+  font-family: 'Mr Dafoe', cursive;
+  font-size: 1.3em;
+  line-height: 0.8em;
+}
+
+
+#left-side {
+  background-color: var(--left-color);
+  width: 60%;
+  z-index: 2;
+}
+
+#left-side .title {  
+  color: white;  
+}
+
+#left-side .fancier {
+  color: var(--right-color);
+}
+
+#right-side {
+  background-color: var(--right-color);
+}
+
+#right-side .title {
+  color: var(--dark);
+}
+
+#right-side .fancier {
+  color: white;
+}
