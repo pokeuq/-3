@@ -1,2 +1,1 @@
-
-# q is for quiet.
+# Q is for quiet.
