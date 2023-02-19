@@ -66,5 +66,5 @@ body {
 }
 
 #right-side .fancier {
-  color: white;
+  color: var(--left-color);
 }
